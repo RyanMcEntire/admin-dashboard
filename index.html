@@ -63,32 +63,32 @@
       id="header"
       class="grid bg-white col-start-3 col-end-11 row-start-1 row-end-2 drop-shadow-lg"
     >
-      <div id="upperHeader" class="grid grid-cols-2 justify-between">
-        <div class="grid justify-start">
-          <img src="./images/crown-black.png" alt="" />
+      <div id="upperHeader" class="grid grid-cols-2 justify-between content-center">
+        <div class="grid grid-rows-1 justify-start content-center">
+          <img src="./images/crown-black.png" alt="" class="row-start-1"/>
           <input
             type="text"
             id="searchBar"
             placeholder="Search"
-            class="border-solid border-gray-200"
+            class="border-solid border-gray-200 row-start-1 max-h-7 w-96 rounded-2xl bg-gray-200"
           />
         </div>
-        <div class="grid justify-end">
-          <img src="./images/crown-black.png" alt="" />
-          <img src="./images/Screenshot from 2022-07-22 18-58-51.png" alt="" />
-          <div id="userName">Clowdy Howdy</div>
+        <div class="grid justify-end ">
+          <img src="./images/crown-black.png" alt=""  class="row-start-1"/>
+          <img src="./images/Screenshot from 2022-07-22 18-58-51.png" alt=""  class="row-start-1"/>
+          <div id="userName" class="row-start-1">Clowdy Howdy</div>
         </div>
       </div>
-      <div id="lowerHeader" class="grid justify-between">
-        <div id="greeting" class="grid grid-cols-2">
+      <div id="lowerHeader" class="grid justify-between grid-rows-1 content-center">
+        <div id="greeting" class="grid grid-cols-2 row-start-1">
           <img src="./images/bg-pfp.png" alt="" />
           <div>
             <div>Hi There,</div>
             <h2 class="text-2xl font-bold">ClowdyHowdy (@clowdy)</h2>
           </div>
         </div>
-        <div id="publishing">
-          <button>New</button><button>Upload</button><button>Share</button>
+        <div id="publishing" class="grid gap-7 row-start-1 text-white font-bold">
+          <button class="bg-sky-500 h-8 w-20 row-start-1 rounded-2xl">New</button><button class="bg-sky-500 h-8 w-20 row-start-1 rounded-2xl">Upload</button><button class="bg-sky-500 h-8 w-20 row-start-1 rounded-2xl">Share</button>
         </div>
       </div>
     </div>
