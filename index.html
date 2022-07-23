@@ -13,46 +13,46 @@
       class="grid text-white font-bold text-lg bg-sky-400 col-start-1 col-end-3 row-start-1 row-end-6"
     >
       <div class="grid auto-rows-min gap-4 pl-6 pt-6">
-        <div class="grid grid-cols-4 row-span-1">
+        <div class="grid grid-cols-5 row-span-1">
           <img src="./images/crown-white.png" alt="" />
           <h1 class="text-2xl" id="title">Dashboard</h1>
         </div>
         <div class="row-span-1">
-          <div class="grid grid-cols-4" id="home">
+          <div class="grid grid-cols-5" id="home">
             <img class="" src="./images/crown-white.png" alt="" />
             <div class="">Home</div>
           </div>
-          <div class="grid grid-cols-4" id="profile">
+          <div class="grid grid-cols-5" id="profile">
             <img src="./images/crown-white.png" alt="" />
-            <div>Profile</div>
+            <div class="">Profile</div>
           </div>
-          <div class="grid grid-cols-4" id="messages">
+          <div class="grid grid-cols-5" id="messages">
             <img src="./images/crown-white.png" alt="" />
             <div>Messages</div>
           </div>
-          <div class="grid grid-cols-4" id="history">
+          <div class="grid grid-cols-5" id="history">
             <img src="./images/crown-white.png" alt="" />
             <div>History</div>
           </div>
-          <div class="grid grid-cols-4" id="tasks">
+          <div class="grid grid-cols-5" id="tasks">
             <img src="./images/crown-white.png" alt="" />
             <div>Tasks</div>
           </div>
-          <div class="grid grid-cols-4" id="communities">
+          <div class="grid grid-cols-5" id="communities">
             <img src="./images/crown-white.png" alt="" />
             <div>Communities</div>
           </div>
         </div>
         <div class="row-span-1">
-          <div class="grid grid-cols-4" id="settings">
+          <div class="grid grid-cols-5" id="settings">
             <img src="./images/crown-white.png" alt="" />
             <div>Settings</div>
           </div>
-          <div class="grid grid-cols-4" id="support">
+          <div class="grid grid-cols-5" id="support">
             <img src="./images/crown-white.png" alt="" />
             <div>Support</div>
           </div>
-          <div class="grid grid-cols-4" id="privacy">
+          <div class="grid grid-cols-5" id="privacy">
             <img src="./images/crown-white.png" alt="" />
             <div>Privacy</div>
           </div>
@@ -61,21 +61,30 @@
     </div>
     <div
       id="header"
-      class="bg-white col-start-3 col-end-11 row-start-1 row-end-6"
+      class="grid bg-white col-start-3 col-end-11 row-start-1 row-end-2"
     >
-      <div id="upperHeader">
-        <img src="./images/crown-black.png" alt="" />
-        <input type="text" id="searchBar" />
-        <img src="./images/crown-black.png" alt="" />
-        <div id="smallPFP"></div>
-        <div id="userName">Clowdy Howdy</div>
+      <div id="upperHeader" class="grid grid-cols-2 justify-between">
+        <div class="grid justify-start">
+          <img src="./images/crown-black.png" alt="" />
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search"
+            class="border-solid border-gray-200"
+          />
+        </div>
+        <div class="grid justify-end">
+          <img src="./images/crown-black.png" alt="" />
+          <img src="./images/Screenshot from 2022-07-22 18-58-51.png" alt="" />
+          <div id="userName">Clowdy Howdy</div>
+        </div>
       </div>
-      <div id="lowerHeader">
-        <div id="greeting">
-          <div></div>
+      <div id="lowerHeader" class="grid justify-between">
+        <div id="greeting" class="grid grid-cols-2">
+          <img src="./images/bg-pfp.png" alt="" />
           <div>
             <div>Hi There,</div>
-            <div>ClowdyHowdy (@clowdy)</div>
+            <h2 class="text-2xl font-bold">ClowdyHowdy (@clowdy)</h2>
           </div>
         </div>
         <div id="publishing">
@@ -87,120 +96,125 @@
       id="cards"
       class="grid grid-cols-11 bg-gray-200 col-start-3 col-end-11 row-start-2 row-end-6"
     >
-      <div id="yourProjects" class="col-start-1 col-end-9">
-        <div class="">
-          <h3>Your Projects</h3>
-          <div>
-            <div>
-              <h2>Super Cool Project</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio nobis dolores ut accusantium corporis cum!
-              </p>
+      <div id="yourProjects" class="grid col-start-1 col-end-9 m-3 grid-rows-2">
+        <div class="row-span-2 items-stretch">
+          <h3 class="text-xl font-bold pl-3">Your Projects</h3>
+          <div class="grid grid-cols-2">
+            <div class="m-4 bg-white">
+              <div>
+                <div>
+                  <h2 class="font-bold">Super Cool Project</h2>
+                  <p class="text-gray-500 text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Distinctio nobis dolores ut accusantium corporis cum!
+                  </p>
+                </div>
+                <div>
+                  <div><img src="./images/crown-black.png" alt="" /></div>
+                  <div><img src="./images/crown-black.png" alt="" /></div>
+                  <div><img src="./images/crown-black.png" alt="" /></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <div><img src="./images/crown-black.png" alt="" /></div>
-              <div><img src="./images/crown-black.png" alt="" /></div>
-              <div><img src="./images/crown-black.png" alt="" /></div>
+            <div class="m-4 bg-white">
+              <div>
+                <h4 class="font-bold">Less Cool Project</h4>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  voluptas, repellendus soluta illum neque consectetur voluptate
+                  commodi sit!
+                </p>
+              </div>
+              <div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>Less Cool Project</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              voluptas, repellendus soluta illum neque consectetur voluptate
-              commodi sit!
-            </p>
-          </div>
-          <div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>Impossible App</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-              vel eaque, mollitia illo sit dolorem?
-            </p>
-          </div>
-          <div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>Easy Peasy App</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              sequi sint, facilis voluptas laudantium error.
-            </p>
-          </div>
-          <div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>Ad Blocker</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              tempora ipsa reprehenderit mollitia nihil quasi incidunt!
-            </p>
-          </div>
-          <div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h4>Money Maker</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quam
-              dicta ad magni fugiat vero atque reiciendis.
-            </p>
-          </div>
-          <div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
-            <div><img src="./images/crown-black.png" alt="" /></div>
+            <div class="m-4 bg-white">
+              <div>
+                <h4 class="font-bold">Impossible App</h4>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Minima vel eaque, mollitia illo sit dolorem?
+                </p>
+              </div>
+              <div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="m-4 bg-white">
+              <div>
+                <h4 class="font-bold">Easy Peasy App</h4>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat sequi sint, facilis voluptas laudantium error.
+                </p>
+              </div>
+              <div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="m-4 bg-white">
+              <div>
+                <h4 class="font-bold">Ad Blocker</h4>
+                <p class="text-gray-500">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente tempora ipsa reprehenderit mollitia nihil quasi
+                  incidunt!
+                </p>
+              </div>
+              <div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="m-4 bg-white">
+              <div>
+                <h4 class="font-bold">Money Maker</h4>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  quam dicta ad magni fugiat vero atque reiciendis.
+                </p>
+              </div>
+              <div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+                <div><img src="./images/crown-black.png" alt="" /></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="infoBar" class="grid grid-rows-2 gap-6">
-        <div id="announcements" class="col-start-9 col-end-12 row-start-1 row-end-2">
+      <div id="infoBar" class="grid col-start-9 col-end-12 gap-10 m-4 ml-0">
+        <div id="announcements" class="row-start-1 row-end-2">
           <div>
-            <h3>Announcements</h3>
-            <div>
-              <div>
-                <h5></h5>
-                <p>
+            <h3 class="text-xl font-bold">Announcements</h3>
+            <div class="bg-white p-8">
+              <div class="grid text-sm">
+                <h5 class="font-bold">Site Maintenance</h5>
+                <p class="text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
                   repellendus!
                 </p>
               </div>
               <div></div>
-              <div>
-                <h5></h5>
-                <p>
+              <div class="grid text-sm">
+                <h5 class="font-bold">Community Share Day</h5>
+                <p class="text-gray-500">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Quibusdam, ut?
                 </p>
               </div>
               <div></div>
-              <div>
-                <h5></h5>
-                <p>
+              <div class="grid text-sm">
+                <h5 class="font-bold">Updated Privacy Policy</h5>
+                <p class="text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
                   dignissimos?
                 </p>
@@ -208,36 +222,48 @@
             </div>
           </div>
         </div>
-        <div id="trending" class="col-start-9 col-end-12 row-start-2 row-end-3">
+        <div id="trending" class="row-start-2 row-end-3">
           <div>
-            <h3>Trending</h3>
-            <div>
-              <div>
-                <div></div>
+            <h3 class="text-xl font-bold">Trending</h3>
+            <div class="bg-white p-10 text-sm">
+              <div class="grid grid-cols-2">
+                <img
+                  src="./images/Screenshot from 2022-07-22 18-58-51.png"
+                  alt=""
+                />
                 <div>
                   <div>@tegan</div>
-                  <div>spicy nugget</div>
+                  <div class="text-gray-500">spicy nugget</div>
+                </div>
               </div>
-              </div>
-              <div>
-                <div></div>
+              <div class="grid grid-cols-2">
+                <img
+                  src="./images/Screenshot from 2022-07-22 18-58-51.png"
+                  alt=""
+                />
                 <div>
                   <div>@kendall</div>
-                  <div>ham sandwich</div>
+                  <div class="text-gray-500">sammich</div>
                 </div>
               </div>
-              <div>
-                <div></div>
+              <div class="grid grid-cols-2">
+                <img
+                  src="./images/Screenshot from 2022-07-22 18-58-51.png"
+                  alt=""
+                />
                 <div>
                   <div>@margen</div>
-                  <div>greek gyro</div>
+                  <div class="text-gray-500">greek gyro</div>
                 </div>
               </div>
-              <div>
-                <div></div>
+              <div class="grid grid-cols-2">
+                <img
+                  src="./images/Screenshot from 2022-07-22 18-58-51.png"
+                  alt=""
+                />
                 <div>
-                  <div@alex</div>
-                  <div>pork bulgogi</div>
+                  <div>@alex</div>
+                  <div class="text-gray-500">pork bulgogi</div>
                 </div>
               </div>
             </div>
